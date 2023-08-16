@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "mosesutibe" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under $mosesutibe_GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
